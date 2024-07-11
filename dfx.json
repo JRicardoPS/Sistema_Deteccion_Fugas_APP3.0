@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "sistemaDeteccion_backend": {
+      "main": "src/sistemaDeteccion_backend/main.mo",
+      "type": "motoko"
+    },
+    "sistemaDeteccion_frontend": {
+      "dependencies": [
+        "sistemaDeteccion_backend"
+      ],
+      "source": [
+        "src/sistemaDeteccion_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "sistemaDeteccion_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
